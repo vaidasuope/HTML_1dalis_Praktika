@@ -1,0 +1,46 @@
+a {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.nav-area {
+    background-color: black;
+}
+.nav-area:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+ul {
+    list-style: none;
+    margin: 0;
+}
+.nav-area > ul > li {
+    float: left;
+    position: relative;
+}
+.nav-area ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    display: block;
+}
+.nav-area ul li:hover a{
+    background: aquamarine;
+}
+.nav-area ul ul{
+    position: absolute;
+    padding: 0;
+    min-width: 160;
+    display: none;
+    top: 100%;
+    left: 0;
+}
+.nav-area ul li:hover > ul {
+    display: block;
+}
+.nav-area ul ul li:hover a {
+    background: black;
+}
+.nav-area ul ul li {
+    position: relative;
+}
